@@ -1,0 +1,39 @@
+.navbar{
+    padding: 2rem 0;
+    
+    li{
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+
+            &:hover{
+                color: blue;
+                border-bottom: 5px solid blue;
+                padding-bottom: 4.8rem;
+
+            }
+
+            &.active{
+                color: blue;
+                border-bottom: 5px solid blue;
+                padding-bottom: 4.8rem;
+            }
+        }
+    }
+}
+
+.jumbo {
+    
+    background-image: url(../images/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content{
+        margin-top: 400px;
+        margin-bottom: -20px;
+        margin-left: 200px;
+        
+    }
+}

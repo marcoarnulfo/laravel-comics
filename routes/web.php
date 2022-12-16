@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+
+    $comixs = config('db.comixs');
+    //dd($comixs);
+
+    $cards = config('db.cards');
+
+    return view('welcome', compact('comixs','cards'));
+})->name('welcome');
